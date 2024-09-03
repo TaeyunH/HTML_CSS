@@ -1,0 +1,218 @@
+<!--Taeyun Hwang-->
+<!--References-->
+<!--W3Schools online HTML editor. W3Schools Online Web Tutorials. (n.d.). https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover -->
+<!--https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp-->
+<!--https://www.geeksforgeeks.org/radio-button-vs-checkbox-in-html/-->
+<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_file-->
+<!--References-->
+<!--References-->
+<!--References-->
+<!DOCTYPE html>
+<html lang="en"></html>
+<html> 
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        CSC230 Class week 1 homework
+    </title>
+    <style>
+        .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        }
+        
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+        
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}        
+        .dropdown:hover .dropdown-content {display: block;}        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        div.scrollmenu {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+        background-color: #777;
+        }
+
+        table, th, td {
+        border:1px solid black;
+        }
+
+        table, th, td {
+        border:2px solid black;
+        }
+    </style>
+</head>
+<header>
+    <a href="https://www.stmartin.edu/"><img src="saint-martins-university.jpg" alt="Saint Martin's University" style="width:300px;"></a>
+</header>
+<body>
+    <h1>H1 Heading</h1>
+    <h2>H2 Heading</h2>
+    <h3>H3 Heading</h3>
+    <h4>H4 Heading</h4>
+    <h5>H5 Heading</h5>
+    <h6>H6 Heading</h6>
+
+    <h2>An ordered list</h2>
+    <ol>
+        <li>CSC160 Introduction to Computer Software</li>
+        <li>CSC210 Database Fundamentals</li>
+        <li>CSC230 Introduction to Web Development</li>
+    </ol>  
+    
+    <h2>An unordered list</h2>
+    <ul>
+        <li>CSC160 Introduction to Computer Software</li>
+        <li>CSC210 Database Fundamentals</li>
+        <li>CSC230 Introduction to Web Development</li>
+    </ul>    
+
+    <h2>Description lists</h2>
+    <dl>
+        <dt>CSC160</dt>
+        <dd>Introduction to Computer Software</dd>
+        <dt>CSC210</dt>
+        <dd>Database Fundamentals</dd>
+        <dt>CSC230</dt>
+        <dd>Introduction to Web Development</dd>
+    </dl>
+
+    <h2>Standard pre</h2>
+    <pre>This introductory course starts with how the web works and covers key web development concepts, 
+enabling the student to understand what it takes to build a web application.
+Back-end and front-end development are covered, and students will gain fundamental knowledge to create simple web pages.
+    </pre>
+
+    <h2>Fixed width pre</h2>
+    <div style="width:300px;overflow:auto">
+    <pre>This introductory course starts with how the web works and covers key web development concepts, enabling the student
+to understand what it takes to build a web application. Back-end and front-end development are covered, and students
+        will gain fundamental knowledge to create simple web pages.</pre></div>
+    <section>
+        <h2>Course Objectives</h2>
+        <p>By the conclusion of this course, students are expected to:</p>
+    </section>
+    <article>
+        <h2>articles vs sections</h2>
+        <p>Reference<br><br><a href="https://www.shecodes.io/athena/60553-when-to-use-section-or-article-in-html"><img src="shecodes.png" alt="Shecoes.io" style="width:200px;"><br><br></a>In HTML, section and article are both used for semantic grouping of content, but there is a slight difference between them.<br>
+        Use section when you want to group content semantically based on a thematic grouping. <br>It is typically used when you have different sections of content on a page.In contrast, use article when you want to represent an independent, self-contained piece of content that can be reused on its own, without any other context. <br>It is typically used for blog posts, news articles, forum posts, etc.</p>
+    </article>
+    <br><br>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Taeyun"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Hwang"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form> 
+    <br>
+    <br>
+    <form>
+        Do you like the class?
+        <br><br>
+        <input type="radio" 
+               name="agree" 
+               value="yes">Yes
+        <br>
+        <input type="radio" 
+               name="agree" 
+               value="no">No
+        <br><br>
+        <input type="Submit">
+    </form>
+    <br> <br> <br> <br> <br>
+    <div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <br> <br> <br> <br> <br>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="https://www.stmartin.edu/">Link 1</a>
+          <a href="https://moodle.stmartin.edu/">Link 2</a>
+          <a href="https://www.stmartin.edu/academics/all-programs/washington-vets-tech-wav2t">Link 3</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <form>
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+        <input type="submit">
+    </form>
+    <br><br><br><br><br>
+    <center>
+    <h2>Exercise 8-4 textbook page 174.</h2>
+    <br><br>
+<table>
+	<caption>My Content here</caption>
+  <tr>
+  	<td rowspan="2"></td>
+    <th colspan="2">A common header for two subheads</th>
+    <th rowspan="2">Header 3</th>
+  </tr>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <th>Thing A</th>
+    <td>data A1</td>
+    <td>data A2</td>
+    <td>data A3</td>
+  </tr>
+    <tr>
+    <th>Thing B</th>
+    <td>data B1</td>
+    <td>data B2</td>
+    <td>data B3</td>
+  </tr>
+    <tr>
+    <th>Thing C</th>
+    <td>data C1</td>
+    <td>data C2</td>
+    <td>data C3</td>
+  </tr>
+</table>
+</center>
+</body>
+
+</html>
