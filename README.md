@@ -27,3 +27,5 @@ Practice 1
       Submission: the completed web page
 Practice 2
   Exercise 9-1, 9-2, and 9-3 From the book; The pizza order form
+Practice 3
+  Exercise 11-2 From the book; Your first style sheet. img is given by the LWD5e_materials
