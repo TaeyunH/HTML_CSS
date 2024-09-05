@@ -25,3 +25,5 @@ Practice 1
   
   2. EXERCISE 5-3. The Black Goose Bistro News page (LWD page 110)
       Submission: the completed web page
+Practice 2
+  Exercise 9-1, 9-2, and 9-3 From the book; The pizza order form
